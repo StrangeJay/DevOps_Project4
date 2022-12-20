@@ -142,7 +142,7 @@ Copy and paste the code below into index.html file.
 The server is now up and running, we can connect it via port 3300. You can launch a separate Putty or SSH console to test what the curl command returns locally.  
 > curl -s http://localhost:3300  
 
-> __Warning__ *You might get an error message whike trying to run node server.js, if that happens, upgrade your nodejs to version 12 and/or above.* 
+> __Warning__ *You might get an error message while trying to run node server.js, if that happens, upgrade your nodejs to version 12 and/or above. Then run the code again* 
 
 It shall return a HTML page, it is hardly readable in the CLI, but we can also try and access it from the Internet.  
 
