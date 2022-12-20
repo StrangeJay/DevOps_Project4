@@ -142,17 +142,26 @@ Copy and paste the code below into index.html file.
 The server is now up and running, we can connect it via port 3300. You can launch a separate Putty or SSH console to test what the curl command returns locally.  
 > curl -s http://localhost:3300  
 
+
+
 It shall return a HTML page, it is hardly readable in the CLI, but we can also try and access it from the Internet.  
 
 For this, you need to open TCP port 3300 in your AWS Web Console for your EC2 Instance.  
 ![Screenshot_20221220_191535](https://user-images.githubusercontent.com/105195327/208737267-ace15fc5-72e9-40f7-ac2f-bd298cead945.png)   
 
+Now you can access our Book Register web application from the Internet, with a browser using a Public IP address or Public DNS name.  
 
+A quick reminder on how to get your server’s Public IP and public DNS name:  
+1. You can find it in your AWS web console in EC2 details  
+2. Run curl -s http://169.254.169.254/latest/meta-data/public-ipv4 for Public IP address or curl -s http://169.254.169.254/latest/meta-data/public-hostname for Public DNS name.  
 
+This is how your WebBook Register Application will look in the browser:  
 
+![Screenshot_20221220_203242](https://user-images.githubusercontent.com/105195327/208751501-812786e9-12a9-46da-9594-d76716a609fc.png)   
 
-
-
+---
+---
+# **THE END!!!***
 
 
 
