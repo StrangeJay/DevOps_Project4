@@ -157,7 +157,7 @@ A quick reminder on how to get your server’s Public IP and public DNS name:
 
 This is how your WebBook Register Application will look in the browser:  
 
-![Screenshot_20221220_203242](https://user-images.githubusercontent.com/105195327/208751501-812786e9-12a9-46da-9594-d76716a609fc.png)   
+![Screenshot_20221220_204611](https://user-images.githubusercontent.com/105195327/208753648-3db45865-cc7b-4ae0-ab8e-72b3771a7e18.png)  
 
 ---
 ---
