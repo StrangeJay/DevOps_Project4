@@ -9,16 +9,18 @@ MEAN Stack is a combination of the following components:
 - Node.js (JavaScript runtime environment) – Accepts requests and displays results to end user  
 ---
 ## Step 0 - Preparing Prerequisites  
-To complete this project, you will need an AWS account and a virtual server with Ubuntu server OS. If you do not have an AWS account, create one [here](https://aws.amazon.com/resources/create-account/) and refer to [project2](https://github.com/StrangeJay/DevOps-Project2/edit/main/README.md) on instructions on how to set up your EC2 instance.  
+To complete this project, you will need an AWS account and a virtual server with an Ubuntu server OS. If you do not have an AWS account, create one [here](https://aws.amazon.com/resources/create-account/) and refer to [project2](https://github.com/StrangeJay/DevOps-Project2/edit/main/README.md) for instructions on how to set up your EC2 instance.  
 
 > __Note__ You can have multiple EC2 instances running at a time, but make sure to stop the ones you don't need at the moment, and terminate the ones you have no further use of. *Your public IP changes when you stop and restart an instance.* 
 
-In previous projects we used different tools to connect to an EC2 instance, but if you do not want to install or launch anything outside of AWS, you can open your CLI straight from Web Console in AWS, like this:   
+In previous projects, we used different tools to connect to an EC2 instance, but if you do not want to install or launch anything outside of AWS, you can open your CLI straight from Web Console in AWS, like this:   
 
 https://user-images.githubusercontent.com/105195327/208721683-a65e86b4-d7fe-4f61-80eb-db93c7c295e9.mp4   
 
-**Task**  
-In this assignment, you are going to implement a simple Book register MEAN stack. 
+# **Task**   
+  
+In this assignment, you are going to implement a simple Book register MEAN stack.  
+
 ---
 
 ## Step1 - Install NodeJs   
@@ -39,7 +41,7 @@ Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.j
 
 ---
 ## Step2 - Install MongoDB  
-MongoDB stores data in flexible, JSON-like documents. Fields in a database can vary from document to document, and data structure can be changed over time. For our application, we are adding book records to MongoDB that contain book name, isbn number, author, and number of pages.  
+MongoDB stores data in flexible, JSON-like documents. Fields in a database can vary from document to document, and data structure can be changed over time. For our application, we are adding book records to MongoDB that contain the book name, ISBN, author, and the number of pages.  
 
 > sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv   
 > 0C49F3730359A14518585931BC711F9BA15703C6  
@@ -87,11 +89,11 @@ MongoDB stores data in flexible, JSON-like documents. Fields in a database can v
 ---
 ## Step3 - INSTALL EXPRESS AND SET UP ROUTES TO THE SERVER  
 Express is a minimal and flexible Node.js web application framework that provides features for web and mobile applications. We will use Express to pass book information to and from our MongoDB database.  
-We also will use [Mongoose](https://mongoosejs.com/) package which provides a straightforward, schema-based solution to model your application data. We will use Mongoose to establish a schema for the database to store data of our book register.  
+We also will use the [Mongoose](https://mongoosejs.com/) package which provides a straightforward, schema-based solution to model your application data. We will use Mongoose to establish a schema for the database to store data of our book register.  
 
 > sudo npm install express mongoose  
 
-- In ‘Books’ folder, create a folder named apps  
+- In the ‘Books’ folder, create a folder named apps  
 > mkdir apps && cd apps  
 
 - Create a file named routes.js  
@@ -128,7 +130,7 @@ Copy and paste the code below (controller configuration defined) into the script
 - In the public folder, create a file named index.html;  
 > vi index.html  
 
-Copy and paste the code below into index.html file.  
+Copy and paste the code below into the index.html file.  
 
 ![Screenshot_20221220_190946](https://user-images.githubusercontent.com/105195327/208736360-9b1b3cad-4ef4-4d4f-9057-1f32c4523a79.png)  
 
